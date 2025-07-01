@@ -1,0 +1,94 @@
+<h1>REGISTRO</h1>
+
+<div class="body-content">
+    <div class="module">
+        <h2>Registro de Usuario</h2>
+        <form class="form" (submit)="submitForm()">
+            <div class="input-container">
+                <label for="nombre">Nombre:</label>
+                <input  type="text"
+                    id="nombre"
+                    placeholder="Nombre" 
+                    name="nombre"
+                    minlength="3"
+                    maxlength="10"
+                    required 
+                    [(ngModel)]="formState.nombre"
+                    #nombre="ngModel">
+                @if((nombre.dirty || nombre.touched) && nombre.invalid){
+                <span class="error-text">El nombre debe tener entre 3 y 10 caracteres</span>
+                }
+            </div>
+            <div class="input-container">
+                <label for="apellido">Apellido:</label>
+                <input  type="text" 
+                    placeholder="Apellido" 
+                    name="apellido"
+                    id="apellido"
+                    minlength="2"
+                    maxlength="15"
+                    required
+                    [(ngModel)]="formState.apellido"
+                    #apellido="ngModel">
+                @if((apellido.dirty || apellido.touched) && apellido.invalid){
+                <span class="error-text">El apellido debe tener entre 2 y 15 caracteres</span>
+                }
+            </div>
+            <div class="input-container">
+                <label for="email">Mail:</label>
+                <input  type="email"
+                    id="email"
+                    placeholder="Email" 
+                    name="email"
+                    minlength="5"
+                    maxlength="20"
+                    required
+                    [(ngModel)]="formState.email"
+                    #email="ngModel">
+                @if((email.dirty || email.touched) && email.invalid){
+                <span class="error-text">El Mail debe tener entre 5 y 20 caracteres</span>
+                }
+            </div>
+            <div class="input-container">
+                <label for="telefono">Teléfono:</label>
+                <input  type="text"
+                    id="telefono"
+                    placeholder="Teléfono" 
+                    name="telefono"
+                    [(ngModel)]="formState.telefono"
+                    #telefono="ngModel">
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input  type="password"
+                    id="password"
+                    minlength="6"
+                    maxlength="10"
+                    placeholder="Contraseña" 
+                    name="password" 
+                    required
+                    [(ngModel)]="formState.password"
+                    #password="ngModel">
+                @if((password.dirty || password.touched) && password.invalid){
+                <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
+                }
+            </div>
+            <div class="input-container">
+                <label for="confirmPassword">Confirme Password:</label>
+                <input  type="password"
+                    id="confirmpassword"
+                    placeholder="Confirme Contraseña" 
+                    name="confirmPassword"
+                    minlength="6"
+                    maxlength="10"
+                    required
+                    [(ngModel)]="formState.confirmPassword"
+                    #confirmPassword = "ngModel">
+                @if((confirmPassword.dirty || confirmPassword.touched) && confirmPassword.invalid){
+                <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
+                }
+            </div>
+            <button type="submit" class="btn btn-block btn-primary boton">Enviar</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+
+.carousel-container {
+    display: flex;
+    height: 400px;
+    width: 800px;
+    margin: 1rem auto;
+}
