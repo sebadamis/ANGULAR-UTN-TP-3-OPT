@@ -1,0 +1,90 @@
+[
+    {
+        "titulo": "Auriculares Inalámbricos con Cancelación de Ruido",
+        "descuento": -20,
+        "precioFinal": 199.99,
+        "precioAntes": 249.99,
+        "stock": 55,
+        "id": 1,
+        "img": "https://cdn.shopify.com/s/files/1/0754/6162/4090/files/Sennheiser_ACCENTUM_Plus_480x480.webp?v=1739284616",
+        "categoria": "Electrónica",
+        "descripcion": "Experimenta un sonido inmersivo con estos auriculares inalámbricos cómodos y de alta calidad."
+    },
+    {
+        "titulo": "Camiseta de Algodón Orgánico",
+        "descuento": -15,
+        "precioFinal": 25.49,
+        "precioAntes": 29.99,
+        "stock": 120,
+        "id": 2,
+        "img": "https://www.babaik.es/tienda/pub/media/amasty/amoptmobile/catalog/product/cache/145b81d7d95e52680602eb75b1975a8a/h/t/http:--213.0.52.52-mirakl-images-camiseta-ornia_PC008727_130_1080x1080_front-left_png.webp",
+        "categoria": "Ropa",
+        "descripcion": "Camiseta suave y transpirable hecha de algodón 100% orgánico."
+    },
+    {
+        "titulo": "Botella de Agua de Acero Inoxidable",
+        "descuento": -25,
+        "precioFinal": 18.75,
+        "precioAntes": 25.00,
+        "stock": 80,
+        "id": 3,
+        "img": "https://www.labarbacoaperfecta.es/sites/default/files/styles/webp/public/products/BOTELLA-TERMICA-YETI-RMBLER-760-ML-GRIS-02.webp?itok=6Gc7YW69",
+        "categoria": "Hogar y Cocina",
+        "descripcion": "Botella de agua duradera y ecológica para mantener tus bebidas frías o calientes."
+    },
+    {
+        "titulo": "Billetera de Cuero Clásica",
+        "descuento": -10,
+        "precioFinal": 44.99,
+        "precioAntes": 49.99,
+        "stock": 30,
+        "id": 4,
+        "img": "https://hshop.es/wp-content/uploads/2022/04/bellroy-slim-sleeve-black_720x.webp",
+        "categoria": "Accesorios",
+        "descripcion": "Billetera de cuero hecha a mano con múltiples compartimentos para tarjetas y efectivo."
+    },
+    {
+        "titulo": "Pulsera de Actividad Inteligente",
+        "descuento": -30,
+        "precioFinal": 69.99,
+        "precioAntes": 99.99,
+        "stock": 40,
+        "id": 5,
+        "img": "https://iccsi.com.ar/wp-content/uploads/que-aplicacion-para-huawei-band-4e.webp",
+        "categoria": "Electrónica",
+        "descripcion": "Realiza un seguimiento de tu actividad, sueño y frecuencia cardíaca con esta avanzada pulsera de actividad."
+    },
+    {
+        "titulo": "Juego de Tazas de Café de Cerámica",
+        "descuento": -22,
+        "precioFinal": 23.40,
+        "precioAntes": 30.00,
+        "stock": 65,
+        "id": 6,
+        "img": "https://designitaly.com/cdn/shop/products/CeramicTeaCupGRIFOSetofTwobyMikroDesign.webp?v=1668522324&width=720",
+        "categoria": "Hogar y Cocina",
+        "descripcion": "Juego de cuatro elegantes tazas de café de cerámica perfectas para el uso diario."
+    },
+    {
+        "titulo": "Zapatillas para Correr para Hombre",
+        "descuento": -18,
+        "precioFinal": 73.79,
+        "precioAntes": 89.99,
+        "stock": 90,
+        "id": 7,
+        "img": "https://centralsport.online/media/mf_webp/png/media/catalog/product/cache/f9bb4946b08eb56afc1e83d5b55bf276/F/3/F36199-deportivas-baratas-adidas-correr-falcon-hombre-negro-2_1.webp",
+        "categoria": "Ropa",
+        "descripcion": "Zapatillas para correr cómodas y con soporte diseñadas para el rendimiento."
+    },
+    {
+        "titulo": "Altavoz Bluetooth Portátil",
+        "descuento": -12,
+        "precioFinal": 35.19,
+        "precioAntes": 39.99,
+        "stock": 75,
+        "id": 8,
+        "img": "https://aiwalatinoamerica.com/wp-content/uploads/2023/11/AWKF4B-01-600x600.webp",
+        "categoria": "Electrónica",
+        "descripcion": "Altavoz Bluetooth compacto y potente para disfrutar de la música mientras viajas."
+    }
+]
