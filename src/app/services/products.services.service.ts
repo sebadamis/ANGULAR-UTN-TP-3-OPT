@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-export interface Products{
+export interface Product{
   id: number,
   titulo: string,
   descuento: number,
@@ -17,11 +17,11 @@ export interface Products{
 @Injectable({
   providedIn: 'root'
 })
-export class ProductsServicesService {
+export class ProductsServices {
   // https://fakestoreapi.com/products
-  private API_URL = "../../../public/product.json"
+  private API_URL = "./product.json"
   constructor(private http: HttpClient) { }
-  getProducts () : Observable<Products[]>{
-    return this.http.get<Products[]>(this.API_URL)
+  getProducts () : Observable<Product[]>{
+    return this.http.get<Product[]>(this.API_URL)
   }
 }
