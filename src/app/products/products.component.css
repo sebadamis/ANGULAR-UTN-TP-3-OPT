@@ -37,6 +37,14 @@ body li {
     margin: 0;
     list-style-type: none;
 }
+.id_num {
+    display: none;
+}
+
+.prod-list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .contenedorCards {
     display: flex;
