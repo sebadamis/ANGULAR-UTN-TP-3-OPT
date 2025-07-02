@@ -30,10 +30,6 @@ export const routes: Routes = [
         component: Registro
     },
     {   
-        path: 'producto',
-        component: Products
-    },
-    {   
         path: '**',
         component: Home
     }

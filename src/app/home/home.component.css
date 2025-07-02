@@ -5,14 +5,14 @@ h1 {
 
 .carousel-container {
     display: flex;
-    width: 90%;
-    height: 40%;
-    margin: 0.25rem auto;
+    width: 900px;
+    height: 350px;
+    margin: 0.15rem auto;
 }
 
 .products {
     display: flex;
     height: 60%;
     width: 90%;
-    margin: 0.25rem auto;
+    margin: 0.15rem auto;
 }
