@@ -1,43 +1,46 @@
-<nav class="navbar navbar-expand-lg bg-body-secondary">
-    <div class="container-fluid">
-        <img class="logo" src="https://i.ibb.co/MyWbMJFH/LOGO.webp" alt="logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/login">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/registro">Registro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/detalle">Detalle</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/catalogo">Catalogo</a>
-                </li>
-            </ul>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+            <img class="logo" src="https://i.ibb.co/MyWbMJFH/LOGO.webp" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/registro">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/detalle">Detalle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/catalogo">Catalogo</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<!-- <main class="main-content"> -->
-    <router-outlet class="main-content"/>
-<!-- </main> -->
+    <main class="main-content">
+        <router-outlet/>
+    </main>
 
 
-<footer class="footer">
-    <span class="span-footer">
-        Copyright &copy; <img class="logo" src="https://i.ibb.co/MyWbMJFH/LOGO.webp" alt="logo">
-    </span>
-        <ul class="span-footer">
-            <li class="nav-item"><a href="#">Privacy Policy</a></li>
-            <li class="nav-item"><a href="#">Terms of use</a></li>
-        </ul>
-</footer>
+    <footer class="footer">
+        <span class="span-footer">
+            Copyright &copy; <img class="logo" src="https://i.ibb.co/MyWbMJFH/LOGO.webp" alt="logo">
+        </span>
+            <ul class="span-footer">
+                <li class="nav-item"><a href="#">Privacy Policy</a></li>
+                <li class="nav-item"><a href="#">Terms of use</a></li>
+            </ul>
+    </footer>
+</body>
+
