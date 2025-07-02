@@ -16,8 +16,26 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.prod-body-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 90vh;
+    width: 100vw;
+    margin: 1rem auto;
+}
+/* .prod-list {
+    display: flex;
+    margin: 0 auto;
+} */
+
+h1 {
+    display: flexbox;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
 body p,
-body h1,
+body 
 body h2,
 body h3,
 body h4,
@@ -44,6 +62,7 @@ body li {
 .prod-list {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .contenedorCards {
@@ -53,14 +72,24 @@ body li {
     align-items: center;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
-    padding: 20px 0;
+    height: 100%;
+    padding: 15px 0;
     box-sizing: border-box;
+
 }
 
 .contenedorCards .card {
     width: 300px;
     transition: ease all 0.3s;
+}
+
+.card {
+    display: flex;
+    margin: 0 1.5rem;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
 }
 
 .contenedorCards .card.esFav .wrapper .infoProd .actions .action.aFavs {
@@ -105,7 +134,7 @@ body li {
     left: 0;
     width: 100%;
     height: 200px;
-    background-color: #b82d44;
+    background-color: #1566b1;
 }
 
 .contenedorCards .card .wrapper .imgProd {
@@ -152,7 +181,6 @@ body li {
 .contenedorCards .card .wrapper .infoProd .extraInfo {
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 .contenedorCards .card .wrapper .infoProd .actions {

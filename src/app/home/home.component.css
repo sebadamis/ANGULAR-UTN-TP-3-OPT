@@ -1,10 +1,18 @@
 h1 {
+    display: flexbox;
     text-align: center;
 }
 
 .carousel-container {
     display: flex;
-    height: 400px;
-    width: 800px;
-    margin: 1rem auto;
+    width: 90%;
+    height: 40%;
+    margin: 0.25rem auto;
+}
+
+.products {
+    display: flex;
+    height: 60%;
+    width: 90%;
+    margin: 0.25rem auto;
 }
