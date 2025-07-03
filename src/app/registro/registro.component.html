@@ -38,7 +38,8 @@
                 <label for="email">Mail:</label>
                 <input  type="email"
                     id="email"
-                    placeholder="Email" 
+                    placeholder="Email - mail@mail.com"
+                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     name="email"
                     minlength="5"
                     maxlength="20"
@@ -46,8 +47,8 @@
                     [(ngModel)]="formState.email"
                     #email="ngModel">
                 @if((email.dirty || email.touched) && email.invalid){
-                <span class="error-text">El Mail debe tener entre 5 y 20 caracteres</span>
-                }
+                <p class="error-text">El Mail debe tener entre 5 y 20 caracteres o el Mail no tiene un formato válido</p>
+                } 
             </div>
             <div class="input-container">
                 <label for="telefono">Teléfono:</label>

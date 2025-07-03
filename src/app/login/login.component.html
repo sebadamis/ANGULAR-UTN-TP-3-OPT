@@ -9,13 +9,14 @@
                         id="email"
                         name="email"
                         placeholder="mail@mail.com"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                         required
                         minlength="5"
                         maxlength="20"
                         [(ngModel)]="formStado.email"
                         #email="ngModel"/>
                     @if((email.dirty || email.touched) && email.invalid){
-                    <span class="error-text">El Mail debe tener entre 5 y 20 caracteres</span>
+                    <p class="error-text">El Mail debe tener entre 5 y 20 caracteres o el Mail no tiene un formato válido</p>
                     }
             </div>
             <!-- <br> -->
