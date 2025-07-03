@@ -88,7 +88,11 @@
                 <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
                 }
             </div>
-            <button type="submit" class="btn btn-block btn-primary boton">Enviar</button>
+            @if(nombre.valid && apellido.valid && email.valid && password.valid && confirmPassword.valid){
+                <button type="submit" class="btn btn-block btn-primary boton">Enviar</button>
+            } @else {
+                <button type="submit" disabled class="btn btn-block btn-primary boton">completa el registro</button>
+            }
         </form>
     </div>
 </div>

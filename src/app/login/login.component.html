@@ -33,7 +33,11 @@
                     <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
                     }
             </div>
-            <button type="submit" class="button">login</button>
+            @if(email.valid && password.valid){
+                <button type="submit" class="button">login</button>
+            } @else {
+                <button type="submit" disabled class="button">completa el formulario</button>
+            }
         </form>
     </div>
 </div>
