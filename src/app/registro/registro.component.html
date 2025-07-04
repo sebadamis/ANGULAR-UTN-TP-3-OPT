@@ -1,99 +1,67 @@
-<h1>REGISTRO</h1>
-
-<div class="body-content">
-    <div class="module">
-        <h2>Registro de Usuario</h2>
-        <form class="form" (submit)="submitForm()">
-            <div class="input-container">
-                <label for="nombre">Nombre:</label>
-                <input  type="text"
-                    id="nombre"
-                    placeholder="Nombre" 
-                    name="nombre"
-                    minlength="3"
-                    maxlength="10"
-                    required 
-                    [(ngModel)]="formState.nombre"
-                    #nombre="ngModel">
-                @if((nombre.dirty || nombre.touched) && nombre.invalid){
-                <span class="error-text">El nombre debe tener entre 3 y 10 caracteres</span>
-                }
+<body>
+    <div class="container">
+        <div class="title">Registro de Usuario</div>
+        <form (submit)="submitForm()">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nombre:</span>
+                    <input type="text" id="nombre" placeholder="Nombre" name="nombre" minlength="3" maxlength="10"
+                        required [(ngModel)]="formState.nombre" #nombre="ngModel">
+                    @if((nombre.dirty || nombre.touched) && nombre.invalid){
+                    <span class="error-text">El nombre debe tener entre 3 y 10 caracteres</span>
+                    }
+                </div>
+                <div class="input-box">
+                    <span class="details">Apellido:</span>
+                    <input type="text" placeholder="Apellido" name="apellido" id="apellido" minlength="2" maxlength="15"
+                        required [(ngModel)]="formState.apellido" #apellido="ngModel">
+                    @if((apellido.dirty || apellido.touched) && apellido.invalid){
+                    <span class="error-text">El apellido debe tener entre 2 y 15 caracteres</span>
+                    }
+                </div>
+                <div class="input-box">
+                    <span class="details">Mail:</span>
+                    <input type="email" id="email" placeholder="Email - mail@mail.com"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" name="email" minlength="5"
+                        maxlength="20" required [(ngModel)]="formState.email" #email="ngModel">
+                    @if((email.dirty || email.touched) && email.invalid){
+                    <p class="error-text">El Mail debe tener entre 5 y 20 caracteres o el Mail no tiene un formato
+                        válido</p>
+                    }
+                </div>
+                <div class="input-box">
+                    <span class="details">Teléfono:</span>
+                    <input type="text" id="telefono" placeholder="Teléfono" name="telefono"
+                        [(ngModel)]="formState.telefono" #telefono="ngModel">
+                </div>
+                <div class="input-box">
+                    <span class="details">Contraseña:</span>
+                    <input type="password" id="password" minlength="6" maxlength="10" placeholder="Contraseña"
+                        name="password" required [(ngModel)]="formState.password" #password="ngModel">
+                    @if((password.dirty || password.touched) && password.invalid){
+                    <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
+                    }
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirme Contraseña:</span>
+                    <input type="password" id="confirmpassword" placeholder="Confirme Contraseña" name="confirmPassword"
+                        minlength="6" maxlength="10" required [(ngModel)]="formState.confirmPassword"
+                        #confirmPassword="ngModel">
+                    @if((confirmPassword.dirty || confirmPassword.touched) && confirmPassword.invalid){
+                    <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
+                    }
+                </div>
             </div>
-            <div class="input-container">
-                <label for="apellido">Apellido:</label>
-                <input  type="text" 
-                    placeholder="Apellido" 
-                    name="apellido"
-                    id="apellido"
-                    minlength="2"
-                    maxlength="15"
-                    required
-                    [(ngModel)]="formState.apellido"
-                    #apellido="ngModel">
-                @if((apellido.dirty || apellido.touched) && apellido.invalid){
-                <span class="error-text">El apellido debe tener entre 2 y 15 caracteres</span>
-                }
-            </div>
-            <div class="input-container">
-                <label for="email">Mail:</label>
-                <input  type="email"
-                    id="email"
-                    placeholder="Email - mail@mail.com"
-                    pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                    name="email"
-                    minlength="5"
-                    maxlength="20"
-                    required
-                    [(ngModel)]="formState.email"
-                    #email="ngModel">
-                @if((email.dirty || email.touched) && email.invalid){
-                <p class="error-text">El Mail debe tener entre 5 y 20 caracteres o el Mail no tiene un formato válido</p>
-                } 
-            </div>
-            <div class="input-container">
-                <label for="telefono">Teléfono:</label>
-                <input  type="text"
-                    id="telefono"
-                    placeholder="Teléfono" 
-                    name="telefono"
-                    [(ngModel)]="formState.telefono"
-                    #telefono="ngModel">
-            </div>
-            <div class="input-container">
-                <label for="password">Password:</label>
-                <input  type="password"
-                    id="password"
-                    minlength="6"
-                    maxlength="10"
-                    placeholder="Contraseña" 
-                    name="password" 
-                    required
-                    [(ngModel)]="formState.password"
-                    #password="ngModel">
-                @if((password.dirty || password.touched) && password.invalid){
-                <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
-                }
-            </div>
-            <div class="input-container">
-                <label for="confirmPassword">Confirme Password:</label>
-                <input  type="password"
-                    id="confirmpassword"
-                    placeholder="Confirme Contraseña" 
-                    name="confirmPassword"
-                    minlength="6"
-                    maxlength="10"
-                    required
-                    [(ngModel)]="formState.confirmPassword"
-                    #confirmPassword = "ngModel">
-                @if((confirmPassword.dirty || confirmPassword.touched) && confirmPassword.invalid){
-                <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
-                }
-            </div>
+            <br>
             @if(nombre.valid && apellido.valid && email.valid && password.valid && confirmPassword.valid){
-                <button type="submit" class="btn btn-block btn-primary boton">Enviar</button>
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
             } @else {
-                <button type="submit" disabled class="btn btn-block btn-primary boton">completa el registro</button>
+            <div class="button">
+                <input type="submit" disabled value="Debe completar el registro">
+            </div>
             }
         </form>
     </div>
-</div>
+</body>
