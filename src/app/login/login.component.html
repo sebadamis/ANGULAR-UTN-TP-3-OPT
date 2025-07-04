@@ -1,44 +1,44 @@
-<h1>LOGIN</h1>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-<div class="login-page">
-    <div class="form">
-        <form class="login-form" (submit)="submitFormLogin()">
-            <h2>Login</h2>
-            <div class="input-content">
-                <input  type="email"
-                        id="email"
-                        name="email"
-                        placeholder="mail@mail.com"
-                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-                        required
-                        minlength="5"
-                        maxlength="20"
-                        [(ngModel)]="formStado.email"
-                        #email="ngModel"/>
-                    @if((email.dirty || email.touched) && email.invalid){
-                    <p class="error-text">El Mail debe tener entre 5 y 20 caracteres o el Mail no tiene un formato válido</p>
-                    }
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="login">
+                <span>Login</span>
             </div>
-            <!-- <br> -->
-            <div class="input-content">
-                <input  type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Contraseña"
-                        required
-                        minlength="6"
-                        maxlength="10"
-                        [(ngModel)]="formStado.password"
-                        #password="ngModel"/>
+            <form (submit)="submitFormLogin()">
+                <div class="data">
+                    <i class='bx bx-user'></i>
+                    <input type="email" id="email" name="email" placeholder="mail@mail.com"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required minlength="5" maxlength="20"
+                        [(ngModel)]="formStado.email" #email="ngModel" />
+                    @if((email.dirty || email.touched) && email.invalid){
+                    <p class="error-text">El Mail debe tener entre 5 y 20 caracteres 
+                        o el Mail no tiene un formato válido</p>
+                    }
+                </div>
+                <div class="data">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required minlength="6"
+                        maxlength="10" [(ngModel)]="formStado.password" #password="ngModel" />
                     @if((password.dirty || password.touched) && password.invalid){
                     <span class="error-text">La contraseña debe tener entre 6 y 10 caracteres</span>
                     }
-            </div>
-            @if(email.valid && password.valid){
-                <button type="submit" class="button">login</button>
-            } @else {
-                <button type="submit" disabled class="button">completa el formulario</button>
-            }
-        </form>
+                </div>
+                @if(email.valid && password.valid){
+                <div class="data button">
+                    <input type="submit" value="login">
+                </div>
+                } @else {
+                <div class="data button">
+                    <input type="submit" disabled value="completa el formulario">
+                </div>
+                }
+                <div class="signup">
+                    NO tiene cuenta?
+                    <a routerLink="/registro">Registrate Aquí</a>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+</body>

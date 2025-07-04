@@ -1,84 +1,122 @@
-.login-page {
-    display: flex;
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
+*{
+    margin:0;
+font-family: Poppins, sans-serif;
+box-sizing: border-box;
+
 }
 
-.form {
-    display: flex;
-    height: auto;
-    z-index: 1;
-    background: #FFFFFF;
-    margin: 0 auto;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+body{
+    background-color: rgb(19, 172, 146);
+    overflow: hidden;
 }
 
-.input-content {
-    display: flexbox;
-    height: auto;
-    width: 90%;
-    margin: 0.25rem auto;
+.container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
 }
-
-.form input {
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-.form .button {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #4CAF50;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
+.wrapper{
+    width:100%;
+    background: white;
     border-radius: 15px;
+    padding:0 0 5px;
 }
 
-.form .button:hover,
-.form .button:active,
-.form .button:focus {
-    background: #2b7c2f;
+.wrapper .login{
+    background-color: rgb(12, 88, 76);
+    margin-bottom: 30px;
+    color: white;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px 15px 0 0;
+
 }
 
+.wrapper form{
+    padding: 20px;
+}
 
+.wrapper form .data{
+    margin-bottom: 15px;
+    position: relative;
+}
 
+.wrapper .data input{
+    width: 95%;
+    padding-left: 60px;
+    height: 40px;
+}
 
+.wrapper .data i{
+    background-color: rgb(12, 88, 76);
+    width:47px;
+    height: 100%;
+    position: absolute;
+    border:1px solid rgb(12, 88, 76);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-h1, h2 {
-    text-align: center;
-    font-size: 2.5rem;
+}
+.wrapper form .pass{
+    margin: -10px 0 15px 0;
+}
+.wrapper form .pass a{
+color: rgb(12, 88, 76);
+text-decoration: none;
+font-size: 12px;
+}
+
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+}
+
+.wrapper form .button input{
+    padding-left: 0px;
+    background-color: rgb(12, 88, 76);
+    border: 1px solid rgb(12, 88, 76);
+    color: white;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.wrapper form .button input:hover{
+    background-color: rgb(20, 172, 65);
+    color:black
+}
+
+.wrapper form .signup{
+    margin: -10px 0 15px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    
+}
+.wrapper form .signup a{
+color: rgb(12, 88, 76);
+text-decoration: none;
+font-size: 14px;
+margin-left: 5px;
+font-weight: 400;
+}
+
+.wrapper form .signup a:hover{
+    text-decoration: underline;
 }
 
 .error-text {
+    display: flex;
+    flex-wrap: wrap;
     color: crimson;
     background-color: yellow;
     font-weight: 800;
-    width: 85%
-}
-
-@media (width < 405px) {
-    .login-page {
-        width: 70%
-    }
-    .error-text {
-        width: 55%
-    }
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3.2rem;
 }
