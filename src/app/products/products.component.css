@@ -1,8 +1,12 @@
-:root {
-    --currencyPrefix: "$";
-}
 
-body {
+
+.productos-body {
+    font-family: 'Roboto Condensed', sans-serif;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    margin: 1rem auto;
+    
+
     overflow-x: hidden;
     color: #666;
     left: 0;
@@ -10,12 +14,6 @@ body {
     margin: 0 auto;
     position: relative;
     transition: ease all 0.3s;
-}
-
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-    max-width: 100vw;
-    max-height: 100vh;
 }
 
 .prod-body-container {
@@ -63,7 +61,11 @@ body li {
 .prod-list {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 30rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenedorCards {
